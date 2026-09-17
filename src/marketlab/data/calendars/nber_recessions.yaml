@@ -1,0 +1,135 @@
+# Bundled NBER-style cycle calendar (recession vs expansion).
+# Offline copy of commonly cited NBER peak–trough windows.
+# Prefer `marketlab regimes --fetcher nber` to refresh from FRED USREC when online.
+#
+# Descriptive research only. Recessions coincide with many other shocks.
+
+name: nber_recessions
+source: NBER business-cycle dates (curated)
+description: US recession vs expansion labeled periods (sample of a non-political calendar).
+
+periods:
+  - start: 1929-01-01
+    end: 1929-07-31
+    label: expansion
+    category: nber
+  - start: 1929-08-01
+    end: 1933-03-31
+    label: recession
+    category: nber
+  - start: 1933-04-01
+    end: 1937-04-30
+    label: expansion
+    category: nber
+  - start: 1937-05-01
+    end: 1938-06-30
+    label: recession
+    category: nber
+  - start: 1938-07-01
+    end: 1945-01-31
+    label: expansion
+    category: nber
+  - start: 1945-02-01
+    end: 1945-10-31
+    label: recession
+    category: nber
+  - start: 1945-11-01
+    end: 1948-10-31
+    label: expansion
+    category: nber
+  - start: 1948-11-01
+    end: 1949-10-31
+    label: recession
+    category: nber
+  - start: 1949-11-01
+    end: 1953-06-30
+    label: expansion
+    category: nber
+  - start: 1953-07-01
+    end: 1954-05-31
+    label: recession
+    category: nber
+  - start: 1954-06-01
+    end: 1957-07-31
+    label: expansion
+    category: nber
+  - start: 1957-08-01
+    end: 1958-04-30
+    label: recession
+    category: nber
+  - start: 1958-05-01
+    end: 1960-03-31
+    label: expansion
+    category: nber
+  - start: 1960-04-01
+    end: 1961-02-28
+    label: recession
+    category: nber
+  - start: 1961-03-01
+    end: 1969-11-30
+    label: expansion
+    category: nber
+  - start: 1969-12-01
+    end: 1970-11-30
+    label: recession
+    category: nber
+  - start: 1970-12-01
+    end: 1973-10-31
+    label: expansion
+    category: nber
+  - start: 1973-11-01
+    end: 1975-03-31
+    label: recession
+    category: nber
+  - start: 1975-04-01
+    end: 1979-12-31
+    label: expansion
+    category: nber
+  - start: 1980-01-01
+    end: 1980-07-31
+    label: recession
+    category: nber
+  - start: 1980-08-01
+    end: 1981-06-30
+    label: expansion
+    category: nber
+  - start: 1981-07-01
+    end: 1982-11-30
+    label: recession
+    category: nber
+  - start: 1982-12-01
+    end: 1990-06-30
+    label: expansion
+    category: nber
+  - start: 1990-07-01
+    end: 1991-03-31
+    label: recession
+    category: nber
+  - start: 1991-04-01
+    end: 2001-02-28
+    label: expansion
+    category: nber
+  - start: 2001-03-01
+    end: 2001-11-30
+    label: recession
+    category: nber
+  - start: 2001-12-01
+    end: 2007-11-30
+    label: expansion
+    category: nber
+  - start: 2007-12-01
+    end: 2009-06-30
+    label: recession
+    category: nber
+  - start: 2009-07-01
+    end: 2020-01-31
+    label: expansion
+    category: nber
+  - start: 2020-02-01
+    end: 2020-04-30
+    label: recession
+    category: nber
+  - start: 2020-05-01
+    end: null
+    label: expansion
+    category: nber

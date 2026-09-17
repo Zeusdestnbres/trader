@@ -1,0 +1,20 @@
+# Example user calendar — drop files like this in ./calendars or pass --calendar PATH.
+# Labels can be anything: vol buckets, your macro tags, earnings seasons, etc.
+
+name: example_custom
+source: example
+description: Toy two-phase calendar showing the file format.
+
+periods:
+  - start: 2018-01-01
+    end: 2019-12-31
+    label: phase_a
+    category: demo
+    metadata:
+      note: first half of the toy sample
+  - start: 2020-01-01
+    end: 2021-12-31
+    label: phase_b
+    category: demo
+    metadata:
+      note: second half of the toy sample

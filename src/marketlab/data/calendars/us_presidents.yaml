@@ -1,0 +1,84 @@
+# DEMO calendar — US presidential party labels.
+# This is a sample of the generic RegimeCalendar format, NOT the product.
+# Swap in any YAML/CSV/JSON of {start, end, label} to compare other regimes.
+#
+# group_by=label  → Republican vs Democrat
+# group_by=category → individual administrations
+#
+# Descriptive research only. Correlation is not causation. Not trading advice.
+
+name: us_presidents
+source: curated sample (White House historical terms)
+description: >
+  Sample labeled periods for the generic regime engine. Party is one label
+  dimension among many you might study (cycles, vol, policy, your own tags).
+
+periods:
+  - start: 1929-03-04
+    end: 1933-03-04
+    label: Republican
+    category: Herbert Hoover
+  - start: 1933-03-04
+    end: 1945-04-12
+    label: Democrat
+    category: Franklin D. Roosevelt
+  - start: 1945-04-12
+    end: 1953-01-20
+    label: Democrat
+    category: Harry S. Truman
+  - start: 1953-01-20
+    end: 1961-01-20
+    label: Republican
+    category: Dwight D. Eisenhower
+  - start: 1961-01-20
+    end: 1963-11-22
+    label: Democrat
+    category: John F. Kennedy
+  - start: 1963-11-22
+    end: 1969-01-20
+    label: Democrat
+    category: Lyndon B. Johnson
+  - start: 1969-01-20
+    end: 1974-08-09
+    label: Republican
+    category: Richard Nixon
+  - start: 1974-08-09
+    end: 1977-01-20
+    label: Republican
+    category: Gerald Ford
+  - start: 1977-01-20
+    end: 1981-01-20
+    label: Democrat
+    category: Jimmy Carter
+  - start: 1981-01-20
+    end: 1989-01-20
+    label: Republican
+    category: Ronald Reagan
+  - start: 1989-01-20
+    end: 1993-01-20
+    label: Republican
+    category: George H. W. Bush
+  - start: 1993-01-20
+    end: 2001-01-20
+    label: Democrat
+    category: Bill Clinton
+  - start: 2001-01-20
+    end: 2009-01-20
+    label: Republican
+    category: George W. Bush
+  - start: 2009-01-20
+    end: 2017-01-20
+    label: Democrat
+    category: Barack Obama
+  - start: 2017-01-20
+    end: 2021-01-20
+    label: Republican
+    category: Donald Trump
+  - start: 2021-01-20
+    end: 2025-01-20
+    label: Democrat
+    category: Joe Biden
+  - start: 2025-01-20
+    end: null
+    label: Republican
+    category: Donald Trump
