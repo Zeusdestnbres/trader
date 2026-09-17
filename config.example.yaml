@@ -1,0 +1,35 @@
+# MarketLab research config
+# This file never authorizes or places trades. There is no broker / order API.
+
+watchlist:
+  - SPY
+  - QQQ
+  - AAPL
+  - MSFT
+
+# Pluggable price provider. Built-in: yfinance | csv
+provider: yfinance
+
+# Used when provider: csv (directory of SYMBOL.csv OHLCV files)
+csv_data_dir: ./data/prices
+
+alerts:
+  pct_change: 3.0    # fire when |last vs previous close| >= this percent
+  sma_cross: true    # fire when 20/50 SMA relationship flips on the latest bar
+
+news:
+  enabled: true
+  per_symbol: 3
+
+regimes:
+  # Bundled name, or a path to YAML/CSV/JSON you drop in.
+  # us_presidents is a SAMPLE calendar (party labels), not the product.
+  calendar: us_presidents
+  group_by: label    # label | category | metadata.<key>
+  calendars_dir: ./calendars
+
+backtest:
+  strategy: sma_crossover
+  fast: 20
+  slow: 50
+  start: "2015-01-01"
